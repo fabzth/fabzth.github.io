@@ -1,0 +1,203 @@
+/* Global Styles */
+body {
+    font-family: 'Georgia', sans-serif; /* Main font for the body */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light grey background for the body */
+    color: #333; /* Dark grey text for better readability */
+    line-height: 1.6; /* Improved line height for better text spacing */
+}
+
+/* Container */
+.container {
+    display: flex; /* Uses Flexbox for layout */
+    max-width: 1200px; /* Max width for the container */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Adds padding around the container */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 250px; /* Fixed width for the sidebar */
+    background-color: #24502b; /* Blue background for sidebar */
+    color: white; /* Changes sidebar text to white */
+    padding: 20px; /* Padding inside the sidebar */
+    border-radius: 8px; /* Rounded corners for sidebar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.sidebar h2 {
+    margin-top: 0; /* Removes top margin */
+}
+
+.sidebar nav ul {
+    list-style-type: none; /* Removes default list styles */
+    padding: 0; /* Removes padding */
+}
+
+.sidebar nav ul li {
+    margin: 15px 0; /* Space between list items */
+}
+
+.sidebar nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: white; /* White color for links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.sidebar nav ul li a:hover {
+    color: #a6ff40; /* Changes color on hover */
+}
+
+/* Main Content Styles */
+main {
+    flex: 1; /* Allows main to take up remaining space */
+    margin-left: 20px; /* Space between sidebar and main */
+    padding: 20px; /* Padding for the main content */
+    background-color: white; /* White background for main */
+    border-radius: 8px; /* Rounded corners for main */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+/* Header Styles */
+header {
+    text-align: center; /* Centers the header text */
+    margin-bottom: 30px; /* Space below header */
+}
+
+.header-image {
+    max-width: 350px; /* Limits the width of the logo */
+    margin-bottom: 20px; /* Space below the logo */
+    border-bottom: 0.5px solid #133c21;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 40px; /* Spacing between sections */
+}
+
+
+h2 {
+    border-bottom: 2px solid #28643a; /* Underline for section titles */
+    padding-bottom: 10px; /* Space below section title */
+}
+
+
+h5 {
+    border-top: 1.5px solid #28643a;
+}
+
+.about-me-container {
+    display: flex; /* Flexbox for profile image and text */
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px; /* Space below the container */
+}
+
+.profile-pic {
+    border-radius: 50%; /* Makes the image circular */
+    width: 120px; /* Fixed width for profile picture */
+    margin-right: 20px; /* Space next to profile picture */
+}
+
+/* List Styles */
+ul {
+    padding-left: 20px; /* Indentation for lists */
+}
+
+/* Contact Form Styles */
+#contact-form {
+    background-color: #f9f9f9; /* Slightly darker background for the form */
+    padding: 20px; /* Padding for the form */
+    border-radius: 8px; /* Rounded corners for form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+#contact-form label {
+    display: block; /* Block display for labels */
+    margin: 10px 0 5px; /* Margin for labels */
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    margin-bottom: 20px; /* Spacing below inputs */
+}
+
+#contact-form button {
+    background-color: #2b5c30; /* Blue button color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Button hover effect */
+}
+
+#contact-form button:hover {
+    background-color: #74fc58; /* Darker blue on hover */
+}
+
+/* Social Media Styles */
+.platform {
+    margin-bottom: 20px; /* Space between platforms */
+}
+
+.social-img {     /* Image styles */
+    width: 100px; /* Fixed width for social media images */
+    display: block; /* Block-level image */
+    margin: 10px auto; /* Center images with auto margin */
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #245426; /* Green color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+}
+
+.button:hover {
+    color:#133c21;
+    background-color: #6ddc73; /* Darker green on hover */
+}
+
+/* Button container for centering */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Optional spacing above the button */
+    margin-bottom: 20px; /* Optional spacing below the button */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; 
+    padding: 15px 0; /* Space in footer */
+    background: #133c21; /* Darker green for footer */
+    color: #fff; /* White text color */
+    margin-top: 20px; /* Space above footer */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stacks sidebar and main on mobile */
+    }
+    
+    .sidebar {
+        width: 100%; /* Full width sidebar on small screens */
+    }
+    
+    main {
+        margin-left: 0; /* Removes left margin on small screens */
+    }
+}
+

@@ -1,0 +1,117 @@
+/* BASE STYLES */
+body {
+    font-family: 'Georgia', serif; /* Use serif for a classic feel */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #164717; /* Background color */
+}
+
+/* HEADER STYLES */
+header {
+    text-align: center; /* Center align header content */
+    margin: 20px 0; /* Space around header */
+}
+
+h1 {
+    color: #ffffff; /* Header text color */
+    font-size: 1.5em; /* Size of the main header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+}
+
+/* CONTAINER STYLES */
+.container {
+    text-align: center; /* Center text under the image */
+    margin-bottom: 50px; /* Space below the container */
+}
+
+.image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Slight rounding of corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.container h1 {
+    color: #ffffff; /* Main welcoming text color */
+    margin: 20px 0; /* Space between elements */
+}
+
+.container h3 {
+    color: #ffffff; /* Subheading color */
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #245426; /* Green color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+}
+
+.button:hover {
+    color:#133c21;
+    background-color: #6ddc73; /* Darker green on hover */
+}
+
+/* Button container for centering */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Optional spacing above the button */
+    margin-bottom: 20px; /* Optional spacing below the button */
+}
+
+/* FOOTER STYLES */
+footer {
+    width: 100%; /* Full width footer */
+    background-color: #21612c; /* Footer background color */
+    padding: 20px 0; /* Vertical padding */
+    box-shadow: 0 -2px 5px rgba(88, 119, 95, 0.5); /* Subtle shadow for separation */
+    position: relative; /* Relative positioning for the footer */
+    text-align: center; 
+    text-align: center; 
+    color: #fff; /* White text color */
+}
+
+nav ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes padding */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the nav items */
+    flex-wrap: wrap; /* Allow wrapping of items on smaller screens */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Default link color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    font-size: 1.1em; /* Slightly larger font for link */
+}
+
+nav ul li a:hover {
+    color: rgb(33, 253, 33); /* Change to green on hover */
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .image {
+        width: 80%; /* Full width on smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack links vertically on mobile */
+        align-items: center; /* Center align items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between links in vertical layout */
+    }
+}

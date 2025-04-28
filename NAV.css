@@ -1,0 +1,169 @@
+/* Body styles */
+body {
+    font-family: Georgia, sans-serif; /* Use a clean sans-serif font */
+    line-height: 1.6; /* Improve readability with line spacing */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Header styles */
+header {
+    background: #1b4021; /* Dark green header background */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Add more padding for space */
+    text-align: center; /* Center header content */
+}
+
+/* Title styles */
+header h1 {
+    font-size: 2em; /* Larger font for the header */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 10px 0; /* Margin for spacing below header */
+}
+
+nav ul li {
+    display: inline; /* Horizontal layout for nav items */
+    margin: 0 15px; /* Space between links */
+}
+
+nav a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #54ff54; /* Change text color on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px; /* Space around main content */
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px; /* Space between sections */
+    padding: 20px; /* Padding for sections */
+    background: #fff; /* White background for section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    text-align: center; /* Center the section title */
+    color: #1b4021; /* Match the theme color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+/* List styles */
+ul, ol {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center horizontally */
+    margin: 15px 0; /* Space between items */
+}
+
+/* Image styles */
+img {
+    display: block; /* Block-level image */
+    margin: 10px auto; /* Center images with auto margin */
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Additional heading styles */
+h3 {
+    color: #25582d; /* Dark green for sub-headings */
+    margin: 10px 0; /* Space for sub-heading */
+}
+
+h4 {
+    color: #555; /* Gray color for descriptions */
+    margin-bottom: 10px; /* Spacing below description */
+}
+
+/* styles.css */
+
+/* General button styles */
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #245426; /* Green color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+}
+
+.button:hover {
+    color:#133c21;
+    background-color: #6ddc73; /* Darker green on hover */
+}
+
+/* Button container for centering */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Optional spacing above the button */
+    margin-bottom: 20px; /* Optional spacing below the button */
+}
+
+
+
+/* Footer styles */
+footer {
+    text-align: center; 
+    padding: 15px 0; /* Space in footer */
+    background: #133c21; /* Darker green for footer */
+    color: #fff; /* White text color */
+    margin-top: 20px; /* Space above footer */
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Smaller font for header on mobile */
+    }
+
+    nav ul li {
+        display: block; /* Stack links on smaller screens */
+        margin-bottom: 10px; /* Space between stacked items */
+    }
+
+    section {
+        padding: 15px; /* Less padding on mobile */
+    }
+
+    img {
+        width: auto; /* Set max width for images on mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+.dance-item {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically centered */
+    margin-bottom: 20px; /* Spacing between items */
+    background-color: #f9f9f9; /* Optional: Background color for each item's container */
+    padding: 10px; /* Padding around items */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: slight shadow for depth */
+}
+
+.dance-item img {
+    border-radius: 8px; /* Rounded corners for images */
+    margin-right: 15px; /* Space between image and text */
+    width: 200px; /* Fixed width for images */
+}
